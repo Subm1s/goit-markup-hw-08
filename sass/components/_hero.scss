@@ -1,29 +1,37 @@
 .hero {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/hero-bc.jpg');
-  margin-top: 0px;
-  margin-bottom: 0px;
+    url('../images/hero-bc-mobile.jpg');
   text-align: center;
-  height: 600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   margin: 0 auto;
-  width: 1600px;
-  background-color: var(--alternative-bgc);
+  width: 480px;
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-bc-tablet.jpg');
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-bc.jpg');
+    width: 1600px;
+    height: 600px;
+  }
 }
 .hero__title {
   color: var(--white-color-text);
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
-  width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
+  max-width: 360px;
 }
 .hero__button {
   background-color: var(--accent-text-color);
