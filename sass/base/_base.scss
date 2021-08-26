@@ -24,12 +24,14 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    margin: 0 auto;
   }
 }
 h1,
@@ -63,5 +65,5 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
   padding-left: 0px;
-  padding-right: 0;
+  padding-right: 0px;
 }
