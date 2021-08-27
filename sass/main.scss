@@ -1,12 +1,13 @@
 @import 'utils/variables';
 @import 'base/base';
+@import 'base/container';
 @import 'components/logo';
 // @import 'components/header';
 @import 'components/hero';
 @import 'components/features';
 @import 'components/business';
-// @import 'components/our-team';
-// @import 'components/clients';
-// @import 'components/footer';
+@import 'components/our-team';
+@import 'components/clients';
+@import 'components/footer';
 // @import 'components/portfolio';
 // @import 'components/modal';

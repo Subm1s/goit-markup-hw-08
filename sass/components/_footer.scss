@@ -1,6 +1,7 @@
 .flex-footer {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
 }
 .footer {
   background-color: var(--alternative-bgc);
@@ -24,6 +25,7 @@
 }
 .contact-footer {
   margin-top: 20px;
+  text-align: center;
 }
 .contact-footer .mail,
 .contact-footer .tell {
@@ -68,7 +70,8 @@
   font-weight: 400;
 }
 .join {
-  margin-left: 70px;
+  text-align: center;
+  margin-top: 60px;
 }
 .join-list {
   display: flex;
@@ -107,7 +110,6 @@
   fill: var(--white-color-text);
 }
 .button-form {
-  margin-left: 12px;
   background-color: var(--accent-text-color);
   border-radius: 4px;
   width: 200px;
@@ -119,6 +121,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  margin-top: 20px;
 
   transition-property: background-color;
   transition-duration: var(--duration-time);
@@ -129,12 +132,14 @@
   }
 }
 .form-subscribe {
-  margin-left: auto;
+  text-align: center;
+  margin-top: 60px;
 }
 .form-use {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  text-align: center;
+  align-items: center;
 }
 
 .form-button-text {
