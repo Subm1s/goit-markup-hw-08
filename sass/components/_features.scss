@@ -13,12 +13,19 @@
   line-height: 1.14;
   margin-bottom: 10px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    justify-content: start;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: start;
+  }
 }
 .features {
   align-items: center;
 }
 .features__list-item {
-  width: 450px;
   &:not(:last-child) {
     margin-bottom: 30px;
   }

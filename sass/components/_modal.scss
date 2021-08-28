@@ -27,9 +27,12 @@
   transform: translate(-50%, -50%) scale(1);
   transition-duration: var(--duration-time);
   transition-timing-function: var(--timing-function);
+  overflow: auto;
 
   width: 96%;
   padding: 40px;
+  height: 98%;
+  max-height: 610px;
 
   background-color: var(--white-color-text);
 
