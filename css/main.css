@@ -469,6 +469,10 @@ img {
   margin-top: 32px;
 }
 
+.menucurrent {
+  color: var(--accent-text-color);
+}
+
 .hero {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bc-mobile.jpg");
   text-align: center;
