@@ -145,6 +145,8 @@
   border-radius: 1px;
   cursor: pointer;
   margin-right: 7px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
 
   .modal-form-checkbox:checked + & {
     background-image: url('../images/icon-check.svg');
@@ -159,6 +161,7 @@
   justify-content: center;
   align-items: center;
   font-size: 12px;
+  flex-wrap: nowrap;
   @media screen and (min-width: 1200px) {
     font-size: 14px;
   }
