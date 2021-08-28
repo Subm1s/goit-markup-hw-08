@@ -31,6 +31,12 @@
       margin-bottom: 30px;
     }
   }
+  @media screen and (min-width: 1200px) {
+    height: 92px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 .clients__icon {
   fill: var(--icon-color);
@@ -64,5 +70,8 @@
   }
   @media screen and (min-width: 768px) {
     width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }

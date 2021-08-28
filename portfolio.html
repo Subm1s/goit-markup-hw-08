@@ -18,15 +18,15 @@
 <body>
     <!--======================== HEADER ========================-->
     <header class="header">
-        <div class="container">
+        <div class="container header-container">
             <nav class="header__nav">
                 <a href="./index.html" class="header__logo">
                     <span class="header__logo--web">Web</span><span class="header__logo--studio-dark">Studio</span>
                 </a>
                 <ul class="header__site-nav list">
                     <li class="header__nav--item"><a href="./index.html"
-                            class="header__link link">Студия</a></li>
-                    <li class="header__nav--item"><a href="./portfolio.html" class="header__link header__link--current link">Портфолио</a></li>
+                            class="header__link header__link--current link">Студия</a></li>
+                    <li class="header__nav--item"><a href="./portfolio.html" class="header__link link">Портфолио</a></li>
                     <li class="header__nav--item"><a href="" class="header__link link">Контакты</a></li>
                 </ul>
             </nav>
@@ -47,6 +47,43 @@
                     </a>
                 </li>
             </ul>
+            <button class="burger" type="button" data-menu-open>
+                <svg class="burger-button" width="40px" height="40px">
+                    <use href="./images/icons.svg#icon-menu_40px"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <div class="mobile-menu_container container">
+                <div class="close-wrapper">
+                    <button class="mobile-menu_close" type="button" data-menu-close>
+                        <svg class="mobile-menu_close-icon" width="40px" height="40px">
+                            <use href="./images/icons.svg#icon-close_40px"></use>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="mobile-menu__nav-list list">
+                    <li class="mobile-menu__nav-item"><a class="mobile-menu_nav link" href="./index.html">Студия</a></li>
+                    <li class="mobile-menu__nav-item"><a class="mobile-menu_nav link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__nav-item"><a class="mobile-menu_nav link" href="">Контакты</a></li>
+                </ul>
+                <ul class="list">
+                    <li><a class="mobile-menu_contact-tell link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    <li class="mobile-menu__formargin"><a class="mobile-menu_contact-mail link"
+                            href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                </ul>
+                <ul class="mobile-menu_social-list list">
+                    <li class="mobile-menu_social-media-item"><a class="mobile-menu_social-media link"
+                            href="#">Instagram</a></li>
+                    <li class="mobile-menu_social-media-item"><a class="mobile-menu_social-media link" href="#">Twitter</a>
+                    </li>
+                    <li class="mobile-menu_social-media-item"><a class="mobile-menu_social-media link" href="#">Facebook</a>
+                    </li>
+                    <li class="mobile-menu_social-media-item"><a class="mobile-menu_social-media link" href="#">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -77,7 +114,21 @@
                     <li class="examples-item">
                         <a href="" class="link anim-link">
                             <div class="examples-img-cover">
-                            <img src="./images/techcrack.jpg" alt="Пример веб-сайта" width="370">
+                            <picture>
+                                <source srcset="./images/image/Portfolio/tehnocreac/img-desktop.webp 1x, ./images/image/Portfolio/tehnocreac/img-desktop@2x.webp 2x"
+                                    media="(min-width:1200px)" type="image/webp">
+                                <source srcset="./images/image/Portfolio/tehnocreac/img-desktop.jpg 1x, ./images/image/Portfolio/tehnocreac/img-desktop@2x.jpg 2x"
+                                    media="(min-width:1200px)">
+                                <source srcset="./images/image/Portfolio/tehnocreac/img-tablet.webp 1x, ./images/image/Portfolio/tehnocreac/img-tablet@2x.webp 2x"
+                                    media="(min-width:768px)" type="image/webp">
+                                <source srcset="./images/image/Portfolio/tehnocreac/img-tablet.jpg 1x, ./images/image/Portfolio/tehnocreac/img-tablet@2x.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source srcset="./images/image/Portfolio/tehnocreac/img-mobile.webp 1x, ./images/image/Portfolio/tehnocreac/img-mobile@2x.webp 2x"
+                                    media="(max-width:767px)" type="image/webp">
+                                <source srcset="./images/image/Portfolio/tehnocreac/img-mobile.jpg 1x, ./images/image/Portfolio/tehnocreac/img-mobile@2x.jpg 2x"
+                                    media="(max-width:767px)">
+                                <img src="#" alt="Технокряк">
+                            </picture>
                                 <div class="anim-description">
                                     <p class="link anim-description-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -92,7 +143,27 @@
                     <li class="examples-item">
                         <a href="" class="link anim-link">
                             <div class="examples-img-cover">
-                                <img src="./images/poster-no-gs.jpg" alt="Пример веб-сайта" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/image/Portfolio/new-orlean/img-desktop.webp 1x, ./images/image/Portfolio/new-orlean/img-desktop@2x.webp 2x"
+                                        media="(min-width:1200px)" type="image/webp">
+                                    <source
+                                        srcset="./images/image/Portfolio/new-orlean/img-desktop.jpg 1x, ./images/image/Portfolio/new-orlean/img-desktop@2x.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="./images/image/Portfolio/new-orlean/img-tablet.webp 1x, ./images/image/Portfolio/new-orlean/img-tablet@2x.webp 2x"
+                                        media="(min-width:768px)" type="image/webp">
+                                    <source
+                                        srcset="./images/image/Portfolio/new-orlean/img-tablet.jpg 1x, ./images/image/Portfolio/new-orlean/img-tablet@2x.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/image/Portfolio/new-orlean/img-mobile.webp 1x, ./images/image/Portfolio/new-orlean/img-mobile@2x.webp 2x"
+                                        media="(max-width:767px)" type="image/webp">
+                                    <source
+                                        srcset="./images/image/Portfolio/new-orlean/img-mobile.jpg 1x, ./images/image/Portfolio/new-orlean/img-mobile@2x.jpg 2x"
+                                        media="(max-width:767px)">
+                                    <img src="#" alt="Постер New Orlean vs Golden Star">
+                                </picture>
                                 <div class="anim-description">
                                     <p class="link anim-description-text">Технокряк это современная площадка распространения коронавируса. Компании
                                         используют эту платформу для цифрового
@@ -108,7 +179,27 @@
                     <li class="examples-item">
                         <a href="" class="link anim-link">
                             <div class="examples-img-cover">
-                                <img src="./images/seafood.jpg" alt="Пример веб-сайта" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/image/Portfolio/seafood/img-desktop.webp 1x, ./images/image/Portfolio/seafood/img-desktop@2x.webp 2x"
+                                        media="(min-width:1200px)" type="image/webp">
+                                    <source
+                                        srcset="./images/image/Portfolio/seafood/img-desktop.jpg 1x, ./images/image/Portfolio/seafood/img-desktop@2x.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="./images/image/Portfolio/seafood/img-tablet.webp 1x, ./images/image/Portfolio/seafood/img-tablet@2x.webp 2x"
+                                        media="(min-width:768px)" type="image/webp">
+                                    <source
+                                        srcset="./images/image/Portfolio/seafood/img-tablet.jpg 1x, ./images/image/Portfolio/seafood/img-tablet@2x.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/image/Portfolio/seafood/img-mobile.webp 1x, ./images/image/Portfolio/seafood/img-mobile@2x.webp 2x"
+                                        media="(max-width:767px)" type="image/webp">
+                                    <source
+                                        srcset="./images/image/Portfolio/seafood/img-mobile.jpg 1x, ./images/image/Portfolio/seafood/img-mobile@2x.jpg 2x"
+                                        media="(max-width:767px)">
+                                    <img src="#" alt="Ресторан Seafood">
+                                </picture>
                                 <div class="anim-description">
                                     <p class="link anim-description-text">Технокряк это современная площадка распространения коронавируса. Компании
                                         используют эту платформу для цифрового
@@ -124,7 +215,27 @@
                     <li class="examples-item">
                         <a href="" class="link anim-link">
                             <div class="examples-img-cover">
-                                <img src="./images/project-prime.jpg" alt="Пример веб-сайта" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/image/Portfolio/prime/img-desktop.webp 1x, ./images/image/Portfolio/prime/img-desktop@2x.webp 2x"
+                                        media="(min-width:1200px)" type="image/webp">
+                                    <source
+                                        srcset="./images/image/Portfolio/prime/img-desktop.jpg 1x, ./images/image/Portfolio/prime/img-desktop@2x.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="./images/image/Portfolio/prime/img-tablet.webp 1x, ./images/image/Portfolio/prime/img-tablet@2x.webp 2x"
+                                        media="(min-width:768px)" type="image/webp">
+                                    <source
+                                        srcset="./images/image/Portfolio/prime/img-tablet.jpg 1x, ./images/image/Portfolio/prime/img-tablet@2x.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/image/Portfolio/prime/img-mobile.webp 1x, ./images/image/Portfolio/prime/img-mobile@2x.webp 2x"
+                                        media="(max-width:767px)" type="image/webp">
+                                    <source
+                                        srcset="./images/image/Portfolio/prime/img-mobile.jpg 1x, ./images/image/Portfolio/prime/img-mobile@2x.jpg 2x"
+                                        media="(max-width:767px)">
+                                    <img src="#" alt="Проект Prime">
+                                </picture>
                                 <div class="anim-description">
                                     <p class="link anim-description-text">Технокряк это современная площадка распространения коронавируса. Компании
                                         используют эту платформу для цифрового
@@ -140,7 +251,27 @@
                     <li class="examples-item">
                         <a href="" class="link anim-link">
                             <div class="examples-img-cover">
-                                <img src="./images/project-boxes.jpg" alt="Пример веб-сайта" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/image/Portfolio/boxes/img-desktop.webp 1x, ./images/image/Portfolio/boxes/img-desktop@2x.webp 2x"
+                                        media="(min-width:1200px)" type="image/webp">
+                                    <source
+                                        srcset="./images/image/Portfolio/boxes/img-desktop.jpg 1x, ./images/image/Portfolio/boxes/img-desktop@2x.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="./images/image/Portfolio/boxes/img-tablet.webp 1x, ./images/image/Portfolio/boxes/img-tablet@2x.webp 2x"
+                                        media="(min-width:768px)" type="image/webp">
+                                    <source
+                                        srcset="./images/image/Portfolio/boxes/img-tablet.jpg 1x, ./images/image/Portfolio/boxes/img-tablet@2x.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/image/Portfolio/boxes/img-mobile.webp 1x, ./images/image/Portfolio/boxes/img-mobile@2x.webp 2x"
+                                        media="(max-width:767px)" type="image/webp">
+                                    <source
+                                        srcset="./images/image/Portfolio/boxes/img-mobile.jpg 1x, ./images/image/Portfolio/boxes/img-mobile@2x.jpg 2x"
+                                        media="(max-width:767px)">
+                                    <img src="#" alt="Проект Boxes">
+                                </picture>
                                 <div class="anim-description">
                                     <p class="link anim-description-text">Технокряк это современная площадка распространения коронавируса. Компании
                                         используют эту платформу для цифрового
@@ -156,7 +287,27 @@
                     <li class="examples-item">
                         <a href="" class="link anim-link">
                             <div class="examples-img-cover">
-                                <img src="./images/inspiration-has-no-borders.jpg" alt="Пример веб-сайта" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/image/Portfolio/noborders/img-desktop.webp 1x, ./images/image/Portfolio/noborders/img-desktop@2x.webp 2x"
+                                        media="(min-width:1200px)" type="image/webp">
+                                    <source
+                                        srcset="./images/image/Portfolio/noborders/img-desktop.jpg 1x, ./images/image/Portfolio/noborders/img-desktop@2x.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="./images/image/Portfolio/noborders/img-tablet.webp 1x, ./images/image/Portfolio/noborders/img-tablet@2x.webp 2x"
+                                        media="(min-width:768px)" type="image/webp">
+                                    <source
+                                        srcset="./images/image/Portfolio/noborders/img-tablet.jpg 1x, ./images/image/Portfolio/noborders/img-tablet@2x.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/image/Portfolio/noborders/img-mobile.webp 1x, ./images/image/Portfolio/noborders/img-mobile@2x.webp 2x"
+                                        media="(max-width:767px)" type="image/webp">
+                                    <source
+                                        srcset="./images/image/Portfolio/noborders/img-mobile.jpg 1x, ./images/image/Portfolio/noborders/img-mobile@2x.jpg 2x"
+                                        media="(max-width:767px)">
+                                    <img src="#" alt="Inspiration has no Borders">
+                                </picture>
                                 <div class="anim-description">
                                     <p class="link anim-description-text">Технокряк это современная площадка распространения коронавируса. Компании
                                         используют эту платформу для цифрового
@@ -172,7 +323,27 @@
                     <li class="examples-item">
                         <a href="" class="link anim-link">
                             <div class="examples-img-cover">
-                                <img src="./images/limited-edition.jpg" alt="Пример веб-сайта" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/image/Portfolio/limitededition/img-desktop.webp 1x, ./images/image/Portfolio/limitededition/img-desktop@2x.webp 2x"
+                                        media="(min-width:1200px)" type="image/webp">
+                                    <source
+                                        srcset="./images/image/Portfolio/limitededition/img-desktop.jpg 1x, ./images/image/Portfolio/limitededition/img-desktop@2x.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="./images/image/Portfolio/limitededition/img-tablet.webp 1x, ./images/image/Portfolio/limitededition/img-tablet@2x.webp 2x"
+                                        media="(min-width:768px)" type="image/webp">
+                                    <source
+                                        srcset="./images/image/Portfolio/limitededition/img-tablet.jpg 1x, ./images/image/Portfolio/limitededition/img-tablet@2x.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/image/Portfolio/limitededition/img-mobile.webp 1x, ./images/image/Portfolio/limitededition/img-mobile@2x.webp 2x"
+                                        media="(max-width:767px)" type="image/webp">
+                                    <source
+                                        srcset="./images/image/Portfolio/limitededition/img-mobile.jpg 1x, ./images/image/Portfolio/limitededition/img-mobile@2x.jpg 2x"
+                                        media="(max-width:767px)">
+                                    <img src="#" alt="Издание Limited Edition">
+                                </picture>
                                 <div class="anim-description">
                                     <p class="link anim-description-text">Технокряк это современная площадка распространения коронавируса. Компании
                                         используют эту платформу для цифрового
@@ -188,7 +359,27 @@
                     <li class="examples-item">
                         <a href="" class="link anim-link">
                             <div class="examples-img-cover">
-                                <img src="./images/project-lab.jpg" alt="Пример веб-сайта" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/image/Portfolio/lab/img-desktop.webp 1x, ./images/image/Portfolio/lab/img-desktop@2x.webp 2x"
+                                        media="(min-width:1200px)" type="image/webp">
+                                    <source
+                                        srcset="./images/image/Portfolio/lab/img-desktop.jpg 1x, ./images/image/Portfolio/lab/img-desktop@2x.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="./images/image/Portfolio/lab/img-tablet.webp 1x, ./images/image/Portfolio/lab/img-tablet@2x.webp 2x"
+                                        media="(min-width:768px)" type="image/webp">
+                                    <source
+                                        srcset="./images/image/Portfolio/lab/img-tablet.jpg 1x, ./images/image/Portfolio/lab/img-tablet@2x.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/image/Portfolio/lab/img-mobile.webp 1x, ./images/image/Portfolio/lab/img-mobile@2x.webp 2x"
+                                        media="(max-width:767px)" type="image/webp">
+                                    <source
+                                        srcset="./images/image/Portfolio/lab/img-mobile.jpg 1x, ./images/image/Portfolio/lab/img-mobile@2x.jpg 2x"
+                                        media="(max-width:767px)">
+                                    <img src="#" alt="Проект LAB">
+                                </picture>
                                 <div class="anim-description">
                                     <p class="link anim-description-text">Технокряк это современная площадка распространения коронавируса. Компании
                                         используют эту платформу для цифрового
@@ -205,7 +396,27 @@
                     <li class="examples-item">
                         <a href="" class="link anim-link">
                             <div class="examples-img-cover">
-                                <img src="./images/growing-business.jpg" alt="Пример веб-сайта" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/image/Portfolio/business/img-desktop.webp 1x, ./images/image/Portfolio/business/img-desktop@2x.webp 2x"
+                                        media="(min-width:1200px)" type="image/webp">
+                                    <source
+                                        srcset="./images/image/Portfolio/business/img-desktop.jpg 1x, ./images/image/Portfolio/business/img-desktop@2x.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="./images/image/Portfolio/business/img-tablet.webp 1x, ./images/image/Portfolio/business/img-tablet@2x.webp 2x"
+                                        media="(min-width:768px)" type="image/webp">
+                                    <source
+                                        srcset="./images/image/Portfolio/business/img-tablet.jpg 1x, ./images/image/Portfolio/business/img-tablet@2x.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/image/Portfolio/business/img-mobile.webp 1x, ./images/image/Portfolio/business/img-mobile@2x.webp 2x"
+                                        media="(max-width:767px)" type="image/webp">
+                                    <source
+                                        srcset="./images/image/Portfolio/business/img-mobile.jpg 1x, ./images/image/Portfolio/business/img-mobile@2x.jpg 2x"
+                                        media="(max-width:767px)">
+                                    <img src="#" alt="Growing Business">
+                                </picture>
                                 <div class="anim-description">
                                     <p class="link anim-description-text">Технокряк это современная площадка распространения коронавируса. Компании
                                         используют эту платформу для цифрового
@@ -224,7 +435,7 @@
     </main>
     <footer class="footer">
         <div class="container flex-footer">
-            <div>
+            <div class="footer-nav">
                 <a href="index.html" class="footer__logo link"><span class="footer__logo--web">Web</span>
                     <span class="footer__logo--studio-light">Studio</span></a>
                 <address class="adress">
@@ -289,6 +500,8 @@
             </div>
         </div>
     </footer>
+        <script src="./js/menu.js"></script>
+
 </body>
 
 </html>

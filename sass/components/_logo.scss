@@ -2,10 +2,16 @@
   display: flex;
   font-family: raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 31px;
   text-decoration: none;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+  }
 }
 .header__logo--web {
   color: var(--logo-web-color);
@@ -17,11 +23,17 @@
   display: flex;
   font-family: raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 31px;
   text-decoration: none;
   align-items: center;
   justify-content: center;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+  }
 }
 .footer__logo--web {
   color: var(--logo-web-color);
